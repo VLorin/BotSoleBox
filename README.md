@@ -1,7 +1,7 @@
 # BotSolebox
 Small bot for solebox.com, it can create an account, log in and add shoes to his basket !
 
-##How to use
+## How to use
 1. In `main_bot.py` edit the account details
 2. Choose either `create_account()` or `login()` as creating an accounting log you in.
 3. Execute
