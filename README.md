@@ -7,7 +7,7 @@ Small bot for solebox.com, it can create an account, log in and add shoes to his
 3. Execute
 4. You can log in yourself to see if the item is in your basket !
 
-## Démarche utiliser pour effectuer se bot
+## Démarche utilisée pour effectuer ce bot
 ### Reconnaissance
 Après avoir exécuter l'exemple et analysé le code de `requet.py`, j'ai essayé de capturer les requêtes http avec wireshark pour regarder les en-têtes, mais comme je l'avais prédit on se retrouve très rapidement avec de l'https, ce qui rend Wireshark inutile.
 Après quelques recherches je découvre l'analyseur réseau intégré dans chrome qui est l'outils parfait pour visualiser les requêtes http et https !
