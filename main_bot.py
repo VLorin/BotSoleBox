@@ -5,7 +5,7 @@ Information relative au compte à créer (ou se connecter)
 Par défaut le pays est la France
 """
 
-email = 'testvincent2@salut.fr'
+email = 'testvincent@salut.fr'
 pwd = 'Salutcestcool55'
 prenom = 'Vincent'
 nom = 'Wiunj'
@@ -22,7 +22,12 @@ Choisir "create_account()" OU "login()" !
 """
 
 new_session()
+
+
 #create_account(email,pwd,prenom,nom,street,numero_rue,ville,code_postal,tel)
 #Lors de la création d'un compte on est déjà connecté !
+
 login(email,pwd)
+
+#/!\ Si les chaussures sont en rupture de stock, il n'y aura rien dans le panier.
 ajoute_chaussure()

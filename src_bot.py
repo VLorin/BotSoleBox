@@ -90,10 +90,10 @@ def ajoute_chaussure():
 
 
     """
-    Les chaussures utilisées
-    https://www.solebox.com/Footwear/Basketball/Air-Force-1-LV8.html
+    Les chaussures utilisées en taille 46 (peut être en rupture de stock !)
+    https://www.solebox.com/index.php?cl=details&cnid=500036&anid=50157&listtype=list&
     """
-    data_chaussure='stoken='+my_stoken+'&lang=1&cnid=500035&listtype=list&actcontrol=details&cl=details&aid=48953&anid=48948&parentid=48948&panid=&fnc=tobasket&am=1'
+    data_chaussure='stoken='+my_stoken+'&lang=1&cnid=500036&listtype=list&actcontrol=details&cl=details&aid=50165&anid=50157&parentid=50157&panid=&fnc=tobasket&am=1'
 
     solebox.requet('/index.php?lang=1&',
         method='POST',
@@ -105,7 +105,7 @@ def ajoute_chaussure():
             'Content-Type': 'application/x-www-form-urlencoded',
             'Connection': 'keep-alive',
             'origin':'https://www.solebox.com',
-            'referer':'https://www.solebox.com/en/Footwear/Basketball/Air-Force-1-LV8.html',
+            'referer':'https://www.solebox.com/Footwear/Running/Solution.html',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
             'sec-fetch-site': 'same-origin',
@@ -115,11 +115,11 @@ def ajoute_chaussure():
             body = data_chaussure
     )
 
-    solebox.requet('/index.php?cl=details&cnid=500035&anid=48948&listtype=list&&lang=1',
+    solebox.requet('/index.php?cl=details&cnid=500036&anid=50157&listtype=list&',
         method='GET',
     	headers={
             'Cache-Control': 'no-cache',
-            'referer':'https://www.solebox.com/en/Footwear/Basketball/Air-Force-1-LV8.html',
+            'referer':'https://www.solebox.com/Footwear/Running/Solution.html',
             'dnt':'1',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
