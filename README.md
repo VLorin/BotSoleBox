@@ -15,7 +15,7 @@ Après quelques recherches je découvre l'analyseur réseau intégré dans chrom
 J'ai tout d'abord créé un compte manuellement pour regarder la requête https que j'emets, et là je découvre dans cette requête POST un élément nommé "stoken", surement pour session token, et qui est surement dynamique (c'est le cas). Je cherche donc un moyen de recupérer ce "stoken", après quelques recherche je tombe sur une video de "Indian Pythonista" sur youtube (merci à lui), dans laquelle il utilise la fonction BeautifulSoup pour recupérer un token similaire. J'ai ensuite eu quelques difficultés pour trouver où ce trouve l'html des réponses, j'ai mis une dizaine minutes à trouver qu'il suffisait de faire ".response" à notre objet pour avoir l'html...
 J'ai maintenant (presque) tout en main pour créer la requête qui créer un compte, au début je recevais des réponses "200 OK", mais pourtant le compte ne se créait pas... Je recevais même des réponses "403 Forbidden" à force de faire trop de test. En cherchant dans les RFC 7230 & 7231 je vois qu'il me manquait l'en-tête Content-Length dans ma requête. J'intègre cet en-tête en calculant sa valeur et enfin ça marche ! Je reçois une réponse "302 Found" et effectivement je peux me connecter sur le compte.
 Les requêtes pour se connecter et ajouter une paire de chaussures au panier se font sans trop de problèmes en suivant la même méthode.
-### Optimsation
+### Optimisation
 En gardant le strict minimum, j'émets 4 requêtes https :
 - GET : Acceder une première fois à https://www.solebox.com/en/my-account/ pour récuperer "mon stoken"
 - POST : Pour créer ou se connecter au compte
